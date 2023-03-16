@@ -1,0 +1,48 @@
+* {
+  margin: 0 auto;
+}
+
+body {
+  background-image: url('./img/background.png');
+  background-repeat: no-repeat;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
+
+@media screen and (max-width: 767px) {
+  div.container {
+    width: 95%;
+  }
+
+  #container-lista-tarefas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  #container-lista-tarefas ol {
+    width: 100%;
+  }
+  
+  #remover-selecionado, #mover-cima, #mover-baixo, #apaga-tudo {
+    order: 1;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  #remover-finalizados, #salvar-tarefas {
+    order: 2;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media  screen and (min-width: 1570px) {
+  body {
+    background-image: none;
+  }
+}
+
